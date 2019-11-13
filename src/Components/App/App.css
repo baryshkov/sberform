@@ -1,10 +1,71 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  align-items: center;
+}
+
+/*.background-image {*/
+/*  position: fixed;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  height: 100vh;*/
+/*  display: block;*/
+/*  !*background-image: url('../../resources/purple_sunset-wallpaper-2880x1800.png');*!*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*  background: url('../../resources/purple_sunset-wallpaper-2880x1800.png') no-repeat center center fixed;*/
+/*  -webkit-background-size: cover;*/
+/*  -moz-background-size: cover;*/
+/*  -o-background-size: cover;*/
+/*  background-size: cover;*/
+/*  -webkit-filter: blur(10px);*/
+/*  -moz-filter: blur(10px);*/
+/*  -o-filter: blur(10px);*/
+/*  -ms-filter: blur(10px);*/
+/*  filter: blur(10px);*/
+/*  z-index: -1;*/
+/*  transform: scale(1.1);*/
+/*}*/
+
+
+.padding {
+  padding: 2.3rem;
+}
+
 .App {
-  text-align: center;
-  background: url(../resources/purple_sunset-wallpaper-2880x1800.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  width: 626px;
+  height: 434px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  /*background-color: black;*/
+  border-radius: 3px;
+  color: #999999;
+  z-index: 99;
+}
+
+.blur {
+  position: absolute;
+  background: url('../../resources/purple_sunset-wallpaper-2880x1800.png') no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden;
+  width: 626px;
+  height: 434px;
+  /*border: 25px solid black;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*right: -50px;*/
+  /*bottom: -50px;*/
+  filter: blur(10px);
+  /*transform: scale(1.1);*/
 }
 
 .App-logo {
@@ -22,6 +83,20 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.return a:visited {
+  /*color: #EBE2EA;*/
+
+}
+.return {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.clip-circle {
+  position: absolute;
+  top: -50px;
+  clip-path: circle(60px at center);
 }
