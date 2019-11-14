@@ -13,30 +13,6 @@
   align-items: center;
 }
 
-/*.background-image {*/
-/*  position: fixed;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  height: 100vh;*/
-/*  display: block;*/
-/*  !*background-image: url('../../resources/purple_sunset-wallpaper-2880x1800.png');*!*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*  background: url('../../resources/purple_sunset-wallpaper-2880x1800.png') no-repeat center center fixed;*/
-/*  -webkit-background-size: cover;*/
-/*  -moz-background-size: cover;*/
-/*  -o-background-size: cover;*/
-/*  background-size: cover;*/
-/*  -webkit-filter: blur(10px);*/
-/*  -moz-filter: blur(10px);*/
-/*  -o-filter: blur(10px);*/
-/*  -ms-filter: blur(10px);*/
-/*  filter: blur(10px);*/
-/*  z-index: -1;*/
-/*  transform: scale(1.1);*/
-/*}*/
-
-
 .padding {
   padding: 2.3rem;
 }
@@ -58,13 +34,7 @@
   overflow: hidden;
   width: 626px;
   height: 434px;
-  /*border: 25px solid black;*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  /*right: -50px;*/
-  /*bottom: -50px;*/
   filter: blur(10px);
-  /*transform: scale(1.1);*/
 }
 
 .App-logo {
@@ -72,7 +42,6 @@
 }
 
 .App-header {
-  /*background-color: #282c34;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -82,16 +51,16 @@
   color: white;
 }
 
-
-.return a:visited {
-  /*color: #EBE2EA;*/
-
-}
 .return {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.arrow {
+  padding-right: .6rem;
 }
 
 .clip-circle {
