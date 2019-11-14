@@ -3,7 +3,6 @@ import LoginForm from '../LoginForm';
 import 'normalize.css';
 import './App.css';
 import arrow from '../../resources/Group.svg';
-import avatar from '../../resources/maxresdefault.png';
 
 class App extends Component {
   render() {
@@ -16,10 +15,9 @@ class App extends Component {
               <img src={arrow} className="arrow" alt="arrow" />
               вернуться
             </a>
-            <div className="container">
-              <img src={avatar} className="clip-circle" alt="logo" />
+            {/*<div className="container">*/}
               <LoginForm />
-            </div>
+            {/*</div>*/}
           </section>
         </div>
       </div>

@@ -45,8 +45,7 @@
   width: 626px;
   height: 434px;
   background-color: rgba(255, 255, 255, 0.1);
-
-  /*background-color: black;*/
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 3px;
   color: #999999;
   z-index: 99;

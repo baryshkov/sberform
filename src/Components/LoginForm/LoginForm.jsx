@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import InputMask from 'react-input-mask';
+import avatar from '../../resources/circle-cropped (3).png';
 
 class LoginForm extends Component {
   state = {
@@ -6,20 +8,30 @@ class LoginForm extends Component {
       {
         name: 'Vasya',
         phone: '+79666666666',
-        rememberCookie: false,
+        rememberMe: false,
+        password: 'lol12345',
       },
       {
         name: 'Prosche Pozvonit',
         phone: '88005553535',
-        rememberCookie: true,
+        rememberMe: true,
+        password: 'lol12345',
       },
     ],
   };
 
-   render() {
+  onSubmit = () => {
+    console.log('submit');
+  };
+
+  render() {
     return (
-      <div className="LoginForm">
-        <div>Номер телефона</div>
+      <div className="container">
+        <img src={avatar} className="" alt="logo" />
+        <form onSubmit={this.onSubmit}>
+          <InputMask mask="+7 ( 999 ) 999-99-99" placeholder="Номер телефона" />
+          <input type="password" />
+        </form>
       </div>
     );
   }
