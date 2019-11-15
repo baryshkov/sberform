@@ -5,7 +5,12 @@ import './App.css';
 import arrow from '../../resources/Group.svg';
 
 class App extends Component {
+  state = {
+    phoneList: ['+79996667788', '+79999999999'],
+  };
+
   render() {
+    const { phoneList } = this.state;
     return (
       <div className="wrapper">
         <div className="blur"></div>
@@ -15,9 +20,7 @@ class App extends Component {
               <img src={arrow} className="arrow" alt="arrow" />
               вернуться
             </a>
-            {/*<div className="container">*/}
-              <LoginForm />
-            {/*</div>*/}
+            <LoginForm phoneList={phoneList} />
           </section>
         </div>
       </div>
