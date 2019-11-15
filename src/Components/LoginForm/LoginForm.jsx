@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InputMask from 'react-input-mask';
+import PropTypes from 'prop-types';
 import './LoginForm.css';
 import avatar from '../../resources/avatar.png';
 import check from '../../resources/login_checkmark.svg';
@@ -17,11 +18,11 @@ class LoginForm extends Component {
   };
 
   validateForm = () => {
-    const { phoneValid, passwordValid } = this.state;
+    const { phoneValid, passwordValid, phoneLength } = this.state;
     if (!passwordValid || !phoneValid) {
       this.setState({ formValid: false });
     }
-    if (this.state.phone.length === 11 && phoneValid && passwordValid) {
+    if (phoneLength === 11 && phoneValid && passwordValid) {
       this.setState({ formValid: true });
     }
   };
@@ -138,5 +139,9 @@ class LoginForm extends Component {
     );
   }
 }
+
+LoginForm.propTypes = {
+  phoneList: PropTypes.array.isRequired,
+};
 
 export default LoginForm;

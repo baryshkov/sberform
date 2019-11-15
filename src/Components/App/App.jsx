@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import LoginForm from '../LoginForm';
-import 'normalize.css';
 import './App.css';
 import arrow from '../../resources/arrow.svg';
 
@@ -13,7 +12,7 @@ class App extends Component {
     const { phoneList } = this.state;
     return (
       <div className="wrapper">
-        <div className="blur"></div>
+        <div className="blur" />
         <div className="App">
           <section className="padding">
             <a className="return" href="#">
