@@ -47,5 +47,9 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.2",
     "prettier": "1.18.2"
+  },
+  "optionalDependencies": {
+    "autoprefixer": "^9.7.1",
+    "postcss-cli": "^6.1.3"
   }
 }

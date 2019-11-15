@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import InputMask from 'react-input-mask';
 import './LoginForm.css';
-import avatar from '../../resources/circle-cropped (3).png';
+import avatar from '../../resources/avatar.png';
 import check from '../../resources/login_checkmark.svg';
 import exclamation from '../../resources/login_error.svg';
 
@@ -21,7 +21,7 @@ class LoginForm extends Component {
     if (!passwordValid || !phoneValid) {
       this.setState({ formValid: false });
     }
-    if (this.state.phone.length === 12 && phoneValid && passwordValid) {
+    if (this.state.phone.length === 11 && phoneValid && passwordValid) {
       this.setState({ formValid: true });
     }
   };
@@ -32,17 +32,7 @@ class LoginForm extends Component {
 
     switch (name) {
       case 'phone':
-        phone = value
-          .split(' ')
-          .join('')
-          .split('(')
-          .join('')
-          .split(')')
-          .join('')
-          .split('-')
-          .join('')
-          .split('_')
-          .join('');
+        phone = value.replace(/[^A-Z0-9]+/gi, '');
         phoneValid = phoneList.includes(phone);
         phoneLength = phone.length;
         break;
@@ -58,6 +48,7 @@ class LoginForm extends Component {
   onChange = e => {
     const name = e.target.name;
     const value = e.target.value;
+
     this.setState(
       {
         [name]: value,
@@ -74,12 +65,17 @@ class LoginForm extends Component {
       '%c SUCCESS!',
       'color: darkorange; font-size: 20px; background: indigo; padding: 30px;',
     );
-    console.table(this.state);
+    console.table({
+      phone: this.state.phone,
+      password: this.state.password,
+      rememberMe: this.state.rememberMe,
+    });
   };
 
   onToggle = () => {
+    const { rememberMe } = this.state;
     this.setState({
-      rememberMe: !this.state.rememberMe,
+      rememberMe: !rememberMe,
     });
   };
 
@@ -101,7 +97,7 @@ class LoginForm extends Component {
             required
           />
           {phoneValid && <img src={check} alt="check" className="login-form__input-check" />}
-          {!phoneValid && phoneLength === 12 && (
+          {!phoneValid && phoneLength === 11 && (
             <img src={exclamation} alt="error" className="login-form__input-error" />
           )}
           <input
