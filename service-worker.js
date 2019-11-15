@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sberform/precache-manifest.74f581f067063d9b79cc41153b7bd4ad.js"
+  "/sberform/precache-manifest.4747b9b16ef94d655e920f61ed43a8bb.js"
 );
 
 self.addEventListener('message', (event) => {

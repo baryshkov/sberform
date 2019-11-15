@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sberform/static/css/main.6b3aa333.chunk.css",
-    "main.js": "/sberform/static/js/main.df3defc9.chunk.js",
-    "main.js.map": "/sberform/static/js/main.df3defc9.chunk.js.map",
+    "main.js": "/sberform/static/js/main.a786ea02.chunk.js",
+    "main.js.map": "/sberform/static/js/main.a786ea02.chunk.js.map",
     "runtime-main.js": "/sberform/static/js/runtime-main.616f8c52.js",
     "runtime-main.js.map": "/sberform/static/js/runtime-main.616f8c52.js.map",
     "static/css/2.764ccc25.chunk.css": "/sberform/static/css/2.764ccc25.chunk.css",
-    "static/js/2.e3d8a5f9.chunk.js": "/sberform/static/js/2.e3d8a5f9.chunk.js",
-    "static/js/2.e3d8a5f9.chunk.js.map": "/sberform/static/js/2.e3d8a5f9.chunk.js.map",
+    "static/js/2.338bac21.chunk.js": "/sberform/static/js/2.338bac21.chunk.js",
+    "static/js/2.338bac21.chunk.js.map": "/sberform/static/js/2.338bac21.chunk.js.map",
     "index.html": "/sberform/index.html",
-    "precache-manifest.74f581f067063d9b79cc41153b7bd4ad.js": "/sberform/precache-manifest.74f581f067063d9b79cc41153b7bd4ad.js",
+    "precache-manifest.4747b9b16ef94d655e920f61ed43a8bb.js": "/sberform/precache-manifest.4747b9b16ef94d655e920f61ed43a8bb.js",
     "service-worker.js": "/sberform/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/sberform/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.6b3aa333.chunk.css.map": "/sberform/static/css/main.6b3aa333.chunk.css.map",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.616f8c52.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.e3d8a5f9.chunk.js",
+    "static/js/2.338bac21.chunk.js",
     "static/css/main.6b3aa333.chunk.css",
-    "static/js/main.df3defc9.chunk.js"
+    "static/js/main.a786ea02.chunk.js"
   ]
 }
