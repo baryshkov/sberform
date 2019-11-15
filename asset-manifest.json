@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sberform/static/css/main.bf29f492.chunk.css",
-    "main.js": "/sberform/static/js/main.76825de0.chunk.js",
-    "main.js.map": "/sberform/static/js/main.76825de0.chunk.js.map",
+    "main.css": "/sberform/static/css/main.6b3aa333.chunk.css",
+    "main.js": "/sberform/static/js/main.df3defc9.chunk.js",
+    "main.js.map": "/sberform/static/js/main.df3defc9.chunk.js.map",
     "runtime-main.js": "/sberform/static/js/runtime-main.616f8c52.js",
     "runtime-main.js.map": "/sberform/static/js/runtime-main.616f8c52.js.map",
     "static/css/2.764ccc25.chunk.css": "/sberform/static/css/2.764ccc25.chunk.css",
     "static/js/2.e3d8a5f9.chunk.js": "/sberform/static/js/2.e3d8a5f9.chunk.js",
     "static/js/2.e3d8a5f9.chunk.js.map": "/sberform/static/js/2.e3d8a5f9.chunk.js.map",
     "index.html": "/sberform/index.html",
-    "precache-manifest.1d173f2ab548685238a5222a7bdfa55d.js": "/sberform/precache-manifest.1d173f2ab548685238a5222a7bdfa55d.js",
+    "precache-manifest.74f581f067063d9b79cc41153b7bd4ad.js": "/sberform/precache-manifest.74f581f067063d9b79cc41153b7bd4ad.js",
     "service-worker.js": "/sberform/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/sberform/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.bf29f492.chunk.css.map": "/sberform/static/css/main.bf29f492.chunk.css.map",
-    "static/media/Group.svg": "/sberform/static/media/Group.cbf00a19.svg",
-    "static/media/circle-cropped (3).png": "/sberform/static/media/circle-cropped (3).d9adaa53.png",
+    "static/css/main.6b3aa333.chunk.css.map": "/sberform/static/css/main.6b3aa333.chunk.css.map",
+    "static/media/arrow.svg": "/sberform/static/media/arrow.cbf00a19.svg",
+    "static/media/avatar.png": "/sberform/static/media/avatar.d9adaa53.png",
     "static/media/login_checkmark.svg": "/sberform/static/media/login_checkmark.e4dcb7cb.svg",
     "static/media/login_error.svg": "/sberform/static/media/login_error.db076938.svg",
     "static/media/App.css": "/sberform/static/media/purple_sunset-wallpaper-2880x1800.a3f99fa9.png"
@@ -23,7 +23,7 @@
     "static/js/runtime-main.616f8c52.js",
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.e3d8a5f9.chunk.js",
-    "static/css/main.bf29f492.chunk.css",
-    "static/js/main.76825de0.chunk.js"
+    "static/css/main.6b3aa333.chunk.css",
+    "static/js/main.df3defc9.chunk.js"
   ]
 }
