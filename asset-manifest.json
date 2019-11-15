@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/sberform/static/css/main.e90dccda.chunk.css",
-    "main.js": "/sberform/static/js/main.798dbf00.chunk.js",
-    "main.js.map": "/sberform/static/js/main.798dbf00.chunk.js.map",
+    "main.css": "/sberform/static/css/main.bf29f492.chunk.css",
+    "main.js": "/sberform/static/js/main.76825de0.chunk.js",
+    "main.js.map": "/sberform/static/js/main.76825de0.chunk.js.map",
     "runtime-main.js": "/sberform/static/js/runtime-main.616f8c52.js",
     "runtime-main.js.map": "/sberform/static/js/runtime-main.616f8c52.js.map",
     "static/css/2.764ccc25.chunk.css": "/sberform/static/css/2.764ccc25.chunk.css",
     "static/js/2.e3d8a5f9.chunk.js": "/sberform/static/js/2.e3d8a5f9.chunk.js",
     "static/js/2.e3d8a5f9.chunk.js.map": "/sberform/static/js/2.e3d8a5f9.chunk.js.map",
     "index.html": "/sberform/index.html",
-    "precache-manifest.07acd6b44e6d6795eed56d7ad9d3c1f5.js": "/sberform/precache-manifest.07acd6b44e6d6795eed56d7ad9d3c1f5.js",
+    "precache-manifest.1d173f2ab548685238a5222a7bdfa55d.js": "/sberform/precache-manifest.1d173f2ab548685238a5222a7bdfa55d.js",
     "service-worker.js": "/sberform/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/sberform/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.e90dccda.chunk.css.map": "/sberform/static/css/main.e90dccda.chunk.css.map",
+    "static/css/main.bf29f492.chunk.css.map": "/sberform/static/css/main.bf29f492.chunk.css.map",
     "static/media/Group.svg": "/sberform/static/media/Group.cbf00a19.svg",
     "static/media/circle-cropped (3).png": "/sberform/static/media/circle-cropped (3).d9adaa53.png",
     "static/media/login_checkmark.svg": "/sberform/static/media/login_checkmark.e4dcb7cb.svg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.616f8c52.js",
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.e3d8a5f9.chunk.js",
-    "static/css/main.e90dccda.chunk.css",
-    "static/js/main.798dbf00.chunk.js"
+    "static/css/main.bf29f492.chunk.css",
+    "static/js/main.76825de0.chunk.js"
   ]
 }
