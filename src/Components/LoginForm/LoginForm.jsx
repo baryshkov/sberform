@@ -6,6 +6,8 @@ import avatar from '../../resources/avatar.png';
 import check from '../../resources/login_checkmark.svg';
 import exclamation from '../../resources/login_error.svg';
 
+const VALID_PHONE_LENGTH = 11;
+
 class LoginForm extends Component {
   state = {
     phone: '',
@@ -22,14 +24,15 @@ class LoginForm extends Component {
     if (!passwordValid || !phoneValid) {
       this.setState({ formValid: false });
     }
-    if (phoneLength === 11 && phoneValid && passwordValid) {
+    if (phoneLength === VALID_PHONE_LENGTH && phoneValid && passwordValid) {
       this.setState({ formValid: true });
     }
   };
 
-  validateField = (name, value) => {
+  validateFieldOnChange = e => {
+    const { name, value } = e.target;
     const { phoneList } = this.props;
-    let { phone, phoneValid, phoneLength, passwordValid } = this.state;
+    let { phone, phoneValid, phoneLength, passwordValid, password } = this.state;
 
     switch (name) {
       case 'phone':
@@ -38,26 +41,13 @@ class LoginForm extends Component {
         phoneLength = phone.length;
         break;
       case 'password':
+        password = value;
         passwordValid = value.length >= 5;
         break;
       default:
         break;
     }
-    this.setState({ phone, phoneValid, phoneLength, passwordValid }, this.validateForm);
-  };
-
-  onChange = e => {
-    const name = e.target.name;
-    const value = e.target.value;
-
-    this.setState(
-      {
-        [name]: value,
-      },
-      () => {
-        this.validateField(name, value);
-      },
-    );
+    this.setState({ phone, phoneValid, phoneLength, passwordValid, password }, this.validateForm);
   };
 
   onSubmit = e => {
@@ -94,11 +84,11 @@ class LoginForm extends Component {
             name="phone"
             className={phoneClassname}
             placeholder="Номер телефона"
-            onChange={this.onChange}
+            onChange={this.validateFieldOnChange}
             required
           />
           {phoneValid && <img src={check} alt="check" className="login-form__input-check" />}
-          {!phoneValid && phoneLength === 11 && (
+          {!phoneValid && phoneLength === VALID_PHONE_LENGTH && (
             <img src={exclamation} alt="error" className="login-form__input-error" />
           )}
           <input
@@ -106,7 +96,7 @@ class LoginForm extends Component {
             name="password"
             className="login-form__input login-form__input-password"
             placeholder="Пароль"
-            onChange={this.onChange}
+            onChange={this.validateFieldOnChange}
             value={password}
             required
           />
