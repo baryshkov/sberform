@@ -51,15 +51,17 @@ class LoginForm extends Component {
   };
 
   onSubmit = e => {
+    const { phone, password, rememberMe } = this.state;
+
     e.preventDefault();
     console.log(
       '%c SUCCESS!',
       'color: darkorange; font-size: 20px; background: indigo; padding: 30px;',
     );
     console.table({
-      phone: this.state.phone,
-      password: this.state.password,
-      rememberMe: this.state.rememberMe,
+      phone,
+      password,
+      rememberMe,
     });
   };
 
