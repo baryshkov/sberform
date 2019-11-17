@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "421adf24f895d963ecc3336dbadb14e1",
+    "revision": "a4681298317945adc0b2ed368efbc824",
     "url": "/sberform/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sberform/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "37788f66d7ea0af4b0ca",
+    "revision": "a153f9707483e7e54d2b",
     "url": "/sberform/static/css/main.6b3aa333.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sberform/static/js/2.338bac21.chunk.js"
   },
   {
-    "revision": "37788f66d7ea0af4b0ca",
-    "url": "/sberform/static/js/main.a786ea02.chunk.js"
+    "revision": "a153f9707483e7e54d2b",
+    "url": "/sberform/static/js/main.194eb4dd.chunk.js"
   },
   {
     "revision": "47948d983dc12a22f23f",
